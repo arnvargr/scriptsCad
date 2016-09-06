@@ -9,6 +9,7 @@
 <body>
     
     <script >
+    function afficheDate(){
     var laDate = new Date();
     var jourToday = laDate.getDate();
     var mois = new Array();
@@ -26,6 +27,9 @@
     mois[11] = "Décembre";
     var moisToday = mois[laDate.getMonth()]; 
     document.write("Ajourd'hui, nous somme le : "+ jourToday+" "+ moisToday);
+}
+<h1>DATE DU JOUR</h1>
+afficheDate();
     </script>
     
 </body>
