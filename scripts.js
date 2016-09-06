@@ -19,5 +19,5 @@ function afficheDate(){
     mois[10] = "Novembre";
     mois[11] = "Décembre";
     var moisToday = mois[laDate.getMonth()]; 
-    document.write("Ajourd'hui, nous somme le : "+ jourToday+" "+ moisToday);
+    document.write("Ajourd'hui, nous sommes le : "+ jourToday+" "+ moisToday);
 }
