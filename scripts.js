@@ -4,7 +4,7 @@ PREMIER SCRIPT : ANNIVERSAIRE
 function afficheDate(){
     var laDate = new Date();
     var jourToday = laDate.getDate();
-    var mois = new Array();
+    var mois = new Array;
     mois[0] = "Janvier";
     mois[1] = "Février";
     mois[2] = "Mars";
@@ -23,9 +23,9 @@ function afficheDate(){
 function checkAnniv() {
 // Récupération du jour et du mois courant
 // GetMonth étant numéroté de 0 à 11, ajout de +1 à GetMonth pour avoir le véritable numéro de mois
-var laDate = new Date();
-var jourToday = laDate.getDate();
-var moisToday = (laDate.getMonth()+1);    
+        var laDate = new Date();
+        var jourToday = laDate.getDate();
+        var moisToday = (laDate.getMonth()+1);    
 
 // création de l'objet collegue
  function collegue(un_prenom, un_jour_naissance, un_mois_naissance){
@@ -33,12 +33,15 @@ var moisToday = (laDate.getMonth()+1);
             this.jourNaissance=un_jour_naissance;
             this.moisNaissance=un_mois_naissance;
         }
+    
+    
 // liste des collègues
-var simon=new collegue ("Simon","4","9");
-var cyrille=new collegue ("Cyrille","3","2");
-var martine=new collegue ("Martine","12","9");
-
+        var simon=new collegue ("Simon","4","9");
+        var cyrille=new collegue ("Cyrille","3","2");
+        var martine=new collegue ("Martine","12","9");
+    
 // création du tableau collegues
+    
         var collegues = new Array;
         collegues[0]=simon;
         collegues[1]=cyrille;
@@ -65,7 +68,7 @@ var martine=new collegue ("Martine","12","9");
     
        
         }
-       
+// une array pour résoudre mettre les anniv du jour ? Et si array vide mettre "pas d'anniv ce mois ci" ?
 }
 
 }
