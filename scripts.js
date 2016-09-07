@@ -4,7 +4,7 @@ PREMIER SCRIPT : ANNIVERSAIRE
 function afficheDate(){
     var laDate = new Date();
     var jourToday = laDate.getDate();
-    var mois = new Array;
+    var mois = new Array();
     mois[0] = "Janvier";
     mois[1] = "Février";
     mois[2] = "Mars";
@@ -42,7 +42,7 @@ function checkAnniv() {
     
 // création du tableau collegues
     
-        var collegues = new Array;
+        var collegues = new Array();
         collegues[0]=simon;
         collegues[1]=cyrille;
         collegues[2]=martine;
@@ -69,6 +69,7 @@ function checkAnniv() {
        
         }
 // une array pour résoudre mettre les anniv du jour ? Et si array vide mettre "pas d'anniv ce mois ci" ?
+
 }
 
 }
