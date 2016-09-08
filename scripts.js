@@ -46,30 +46,14 @@ function checkAnniv() {
         collegues[0]=simon;
         collegues[1]=cyrille;
         collegues[2]=martine;
-      
-
-       
+      var testAnniv = false;
+ 
+ 
+         
         for (i=0; i<= collegues.length;i++){
-   
-        if (moisToday==collegues[i].moisNaissance && jourToday==collegues[i].jourNaissance){
-        document.write("Joyeux anniversaire "+ collegues[i].prenom+" !  "+"<br/> ");
-       
-        
+        if (moisToday==collegues[i].moisNaissance && jourToday==collegues[i].jourNaissance){testAnniv = true;document.write("Joyeux anniversaire "+ collegues[i].prenom+" !  "+"<br/> ");}  
+        else if (moisToday==collegues[i].moisNaissance && jourToday>collegues[i].jourNaissance){testAnniv = true;document.write("Ce mois-ci, c'était l'anniversaire de : "+ collegues[i].prenom+" le  "+collegues[i].jourNaissance+"/"+collegues[i].moisNaissance+"<br/> "); }
+        else if (moisToday==collegues[i].moisNaissance && jourToday<collegues[i].jourNaissance){testAnniv = true; document.write("Ce mois-ci, c'est l'anniversaire de : "+ collegues[i].prenom+" le  "+collegues[i].jourNaissance+"/"+collegues[i].moisNaissance+"<br/> ");}
+        if (testAnniv == false){document.write("Pas d'anniversaire ce mois-ci !");break;}      
         }
-        else if (moisToday==collegues[i].moisNaissance && jourToday>collegues[i].jourNaissance){
-    
-        document.write("Ce mois-ci, c'était l'anniversaire de : "+ collegues[i].prenom+" le  "+collegues[i].jourNaissance+"/"+collegues[i].moisNaissance+"<br/> ");
-      
-       
-        }
-        else if (moisToday==collegues[i].moisNaissance && jourToday<collegues[i].jourNaissance){
-     
-         document.write("Ce mois-ci, c'est l'anniversaire de : "+ collegues[i].prenom+" le  "+collegues[i].jourNaissance+"/"+collegues[i].moisNaissance+"<br/> ");
-    
-       
-        }
-// une array pour résoudre mettre les anniv du jour ? Et si array vide mettre "pas d'anniv ce mois ci" ?
-
-}
-
 }
